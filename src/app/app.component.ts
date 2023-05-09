@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faLink } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faLink);
 
 @Component({
   selector: 'app-root',
