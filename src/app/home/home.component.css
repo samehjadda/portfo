@@ -1,0 +1,50 @@
+.greeting-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  h1 {
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fade-in 2s ease-in-out forwards, float 10s ease-in-out infinite;
+  }
+  
+  
+  @keyframes float {
+    0% {
+      transform: translate(-50%, -50%);
+    }
+    25% {
+      transform: translate(-55%, -55%);
+    }
+    50% {
+      transform: translate(-50%, -50%);
+    }
+    75% {
+      transform: translate(-45%, -45%);
+    }
+    100% {
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+    

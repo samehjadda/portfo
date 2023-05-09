@@ -1,6 +1,8 @@
-<app-header></app-header>
-<div class="content-wrapper">
-  <router-outlet></router-outlet>
+<app-loading></app-loading>
+<div class="app-container" *ngIf="!isLoading">
+  <app-header></app-header>
+  <div class="content" [@fadeInAnimation]>
+    <router-outlet></router-outlet>
+  </div>
+  <app-footer></app-footer>
 </div>
-<fa-icon icon="link"></fa-icon>
-<app-footer></app-footer>
